@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body id="bg" style="background-color: #ccffdd">
+
+   <div class="container">
+       <h1 align="center" style="background-color: #80ffaa">Details</h1>
+     <div class="jumbotron" style="background-color:#99ffbb">
+         <div class="row">
+        <div class="col">
+          <center><b>
+           <form method="post">
+
+              {{form.as_p}}
+              {% csrf_token %}
+
+              <input type="submit" name="" class="btn btn-success" value="Submit">
+           </form>
+          </b></center>
+            <center><img src="{% static "images/delever.gif"%}" width="500" height="180"></center>
+        </div>
+
+      </div>
+      </div>
+    </div>
+</body>
+</html>
